@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ms-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Ernech/server-config
+          default-label: "main"
+
+server:
+  port: ${SERVER_PORT:8887}
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8763/eureka}
+
