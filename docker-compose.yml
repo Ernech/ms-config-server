@@ -14,7 +14,7 @@ networks:
 
 services:
   ms-config-server:
-    image: ms-config-server:0.0.2
+    image: ms-config-server:0.0.4
     mem_limit: 200m
     ports:
       - "8887:8887"
