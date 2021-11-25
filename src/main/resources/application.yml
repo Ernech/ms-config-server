@@ -5,19 +5,63 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Ernech/server-config
+          uri: git@github.com:Ernech/server-config.git
+          ignoreLocalSshSettings: true
+          hostKey: "AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
+          hostKeyAlgorithm: ssh-rsa
           default-label: "main"
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
 
 server:
   port: ${SERVER_PORT:8887}
 
 eureka:
   client:
+
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8763/eureka}
+    enabled: false
 
 encrypt:
   key: ds5943RfsFDrJeRE4564vdsrdDsNEfSDfd4FRH4555vfDGds4gd
-
